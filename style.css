@@ -1,0 +1,354 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#121212;
+    color:white;
+    font-family:Arial, sans-serif;
+    text-align:center;
+    padding:30px;
+}
+
+h1{
+    margin-bottom:40px;
+}
+
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.card{
+    background:#1e1e1e;
+    width:250px;
+    height:150px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:15px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+    background:#333;
+}
+.board{
+    display:grid;
+    grid-template-columns:repeat(3,100px);
+    gap:10px;
+    justify-content:center;
+    margin-top:20px;
+}
+
+.cell{
+    width:100px;
+    height:100px;
+    font-size:40px;
+    font-weight:bold;
+}
+.memory-board{
+    display:grid;
+    grid-template-columns:repeat(4,100px);
+    gap:10px;
+    justify-content:center;
+    margin-top:20px;
+}
+
+.memory-card{
+    width:100px;
+    height:100px;
+    font-size:30px;
+}
+button{
+    background:#4CAF50;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+body{
+    text-align:center;
+    background:#121212;
+    color:white;
+    font-family:Arial, sans-serif;
+}
+.game-card{
+    width:250px;
+    margin:15px auto;
+    padding:20px;
+    border-radius:15px;
+    background:#1e1e1e;
+}
+@media(max-width:600px){
+
+    .board{
+        grid-template-columns:repeat(3,80px);
+    }
+
+    .cell{
+        width:80px;
+        height:80px;
+    }
+
+    .memory-board{
+        grid-template-columns:repeat(4,70px);
+    }
+
+    .memory-card{
+        width:70px;
+        height:70px;
+    }
+}
+.memory-board{
+    display:grid;
+    grid-template-columns:repeat(4,100px);
+    gap:10px;
+    justify-content:center;
+}
+/* Rock Paper Scissors Styles */
+
+body{
+    background:#121212;
+    color:white;
+    text-align:center;
+    font-family:Arial,sans-serif;
+}
+
+.player-section{
+    margin-top:20px;
+}
+
+.player{
+
+    width:250px;
+
+    margin:25px auto;
+
+    padding:20px;
+
+    border:3px solid #00e5ff;
+
+    border-radius:20px;
+
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow{
+
+    from{
+        box-shadow:
+        0 0 5px #00e5ff,
+        0 0 10px #00e5ff;
+    }
+
+    to{
+        box-shadow:
+        0 0 15px #00e5ff,
+        0 0 30px #00e5ff;
+    }
+}
+
+#computer-choice,
+#human-choice{
+
+    font-size:90px;
+}
+
+.computer-name{
+    color:#4fc3f7;
+}
+
+.human-name{
+    color:#81c784;
+}
+
+.vs-box{
+
+    width:60px;
+    height:60px;
+
+    margin:25px auto;
+
+    background:#ff5252;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:28px;
+    font-weight:bold;
+
+    color:white;
+
+    box-shadow:0 0 20px #ff5252;
+}
+
+.score-card{
+    margin-bottom:20px;
+}
+
+#result{
+    margin-top:20px;
+    min-height:40px;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.buttons button{
+
+    padding:12px 20px;
+
+    margin:8px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:16px;
+}
+
+/* Guess the Number Styles */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:#0f0f0f;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+h1{
+    margin-bottom:20px;
+}
+
+/* MAIN LAYOUT */
+.wrapper{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+/* PANELS */
+.panel{
+    width:320px;
+    background:#161616;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 0 10px rgba(0,255,0,0.1);
+}
+
+.hidden{
+    display:none;
+}
+
+/* TITLE */
+.card-title{
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+/* SUB TEXT */
+.sub-text{
+    font-size:13px;
+    opacity:0.7;
+    margin-bottom:15px;
+}
+
+/* LEVEL CARDS */
+.level-card{
+    padding:15px;
+    margin:10px 0;
+    border-radius:12px;
+    cursor:pointer;
+    transition:0.3s;
+    font-weight:bold;
+}
+
+.level-card span{
+    font-size:12px;
+    opacity:0.8;
+}
+
+.level1{ background:#1f4d2a; }
+.level2{ background:#1b3d5a; }
+.level3{ background:#3b2a55; }
+
+.level-card:hover{
+    transform:scale(1.05);
+}
+
+/* INPUT */
+input{
+    padding:10px;
+    width:80%;
+    margin:10px 0;
+    border:none;
+    border-radius:8px;
+    text-align:center;
+}
+
+/* BUTTON */
+.btn{
+    padding:10px 20px;
+    border:none;
+    background:#4caf50;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    margin-top:5px;
+}
+
+/* BACK BUTTON */
+.back-btn{
+    margin-top:10px;
+    padding:10px;
+    border:1px solid #4caf50;
+    background:transparent;
+    color:#4caf50;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* LIVE */
+.live{
+    margin-top:15px;
+    font-size:14px;
+    opacity:0.8;
+}
+
+/* RESULT BOX */
+.result-box{
+    margin-top:10px;
+    padding:15px;
+    background:#1c1c1c;
+    border-radius:10px;
+}
+

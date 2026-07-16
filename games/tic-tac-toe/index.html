@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+
+    <button onclick="goHome()">🏠 Home</button>
+
+    <h1>⭕ Tic Tac Toe ❌</h1>
+    <button onclick="setMode('pvp')">
+👥 Player vs Player
+</button>
+
+<button onclick="setMode('ai')">
+🤖 Player vs Computer
+</button>
+
+<h2 id="mode">
+Select Game Mode
+</h2>
+
+    <h2 id="status">Player X Turn</h2>
+
+    <div class="board">
+
+        <button class="cell" onclick="play(0)"></button>
+        <button class="cell" onclick="play(1)"></button>
+        <button class="cell" onclick="play(2)"></button>
+
+        <button class="cell" onclick="play(3)"></button>
+        <button class="cell" onclick="play(4)"></button>
+        <button class="cell" onclick="play(5)"></button>
+
+        <button class="cell" onclick="play(6)"></button>
+        <button class="cell" onclick="play(7)"></button>
+        <button class="cell" onclick="play(8)"></button>
+
+    </div>
+
+    <br>
+
+    <button onclick="resetGame()">🔄 Reset</button>
+
+    <script src="game.js"></script>
+
+</body>
+</html>

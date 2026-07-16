@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Guess Number Game</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+
+<h1>🎯 Guess Number Game</h1>
+
+<div class="wrapper">
+
+    <!-- LEFT SIDE: LEVEL SCREEN -->
+    <div id="levelScreen" class="panel">
+
+        <div class="card-title">🚀 Choose Level</div>
+        <p class="sub-text">Select a level to start the game</p>
+
+        <div class="level-card level1" onclick="startGame(50)">
+            🏆 Level 1 <br><span>1 to 50</span>
+        </div>
+
+        <div class="level-card level2" onclick="startGame(100)">
+            🏆 Level 2 <br><span>1 to 100</span>
+        </div>
+
+        <div class="level-card level3" onclick="startGame(200)">
+            🏆 Level 3 <br><span>1 to 200</span>
+        </div>
+
+        <div class="info">
+            💡Computer picks a number, you guess it!
+        </div>
+
+    </div>
+
+    <!-- RIGHT SIDE: GAME SCREEN -->
+    <div id="gameScreen" class="panel hidden">
+
+        <div class="card-title">🎯 Guess Number Game</div>
+        <p id="rangeText">Guess a number</p>
+
+        <input type="number" id="guessInput" placeholder="Enter number">
+
+        <button onclick="backToLevel()" class="back-btn">← Back to Level</button>
+
+        <button onclick="checkGuess()" class="btn">Check</button>
+
+        <div class="live">Live Check 🔍</div>
+
+        <div id="result" class="result-box">Start guessing...</div>
+
+    </div>
+
+</div>
+
+<script src="game.js"></script>
+
+</body>
+
+</html>
